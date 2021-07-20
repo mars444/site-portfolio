@@ -16,4 +16,107 @@ body {
     }
 }
 
+.intro {
+    background: no-repeat url("../images/intro-bg.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.fixed__box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    a {
+        color: white;
+    }
+}
 
+.user {
+    &__image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+
+        &-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+    }
+    &__phone {
+        padding: 10px;
+    }
+    &__location {
+        padding: 5px 10px;
+    }
+
+    &__social__list {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            padding: 0 20px;
+            font-size: 25px;
+        }
+    }
+
+    &__skills {
+        &-title {
+            font-size: 25px;
+            padding: 10px;
+        }
+        &__list {
+            font-size: 20px;
+            &__item {
+                position: relative;
+                padding: 5px 10px;
+                padding-left: 40px;
+            }
+            i {
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+.gulp-icon {
+    font-size: 25px;
+    left: 3px !important;
+}
+
+.box-title {
+    color: #069;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.content__box {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    max-width: 550px;
+    width: 100%;
+    padding: 50px;
+    margin-right: 50pxg;
+    margin-left: auto;
+
+    &-text {
+        padding-bottom: 10px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
