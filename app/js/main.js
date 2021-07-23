@@ -5,7 +5,32 @@ $(function () {
         prevArrow: '<button type="button" class="slick_button slick-prev  fa fa-chevron-left"></button>',
         slidesToShow: 3,
         infinite: false,
-
+        responsive: [
+            {
+              breakpoint: 1500,
+              settings: {
+                slidesToShow: 2,
+      
+              }
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+      
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+      
+              }
+            },
+        
+          
+      
+          ]
 
     });
 
@@ -139,16 +164,5 @@ $(function () {
 
 
 //parallax
-
-
-
-
-
-
-
-
-
-
-
 
 });
